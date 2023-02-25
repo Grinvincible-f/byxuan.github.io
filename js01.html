@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PracticeJS</title>
+</head>
+<body>
+    <p id= "demo" style="display:block">
+        JavaScript can change the type of HTML elements' type.</p>
+    <button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">
+    Click me to change the type！
+    </button>
+    <br>
+    <button type="button" onclick="document.getElementById('demo').style.display='none'">
+        Click me to change the style！
+    </button>
+    
+    <br><a id="demo2" href="https://www.Netflix.com">Netflix!</a>
+    <input type="button" onclick="changeLink()" value="change the link!">
+    <script src="./js02.js"></script>
+    <br>
+    <!-- <script>window.alert(5 + 6)</script> -->
+    <script>
+    var x = 5 - 7;
+    // Object.getOwnPropertyDescriptor(window,x)
+    x = Math.pow(x,2);
+    x **=2;
+    console.log(x);
+    y = 123e-5;
+    var y;
+    y = ''; //the type of y is string now
+    var z = false;
+    z = undefined;  //the walue and type are both undefined.
+
+
+    const car = {type:"porsche", model:"911", color:"Black"};
+    car.color = "White";
+    car.owner = "Bill";
+    const numberlist = [1,2,3,4,5]
+    numberlist[0] = 0.0
+    numberlist.push(6)
+    document.write(numberlist + '</br>')
+    {
+        const numberlist = [9,8,7,6]
+        document.write(numberlist + '</br>')
+        // redefine a const variable in the block
+    }
+
+    document.write("Document write for test only.")
+    console.log(num)
+    // JavaScript variables are containers that store data values.
+    // Data types: undefined, null, boolean, string, symbol, number, object(can not be compared)
+    // var const(ReferenceError) let(ReferenceError)
+
+    var person = {
+    firstName: "Bill",
+    lastName : "Gates",
+    id       : 678,
+    fullName : function() {
+        return this.firstName + " " + this.lastName;
+        }
+    };
+
+    var text = "Hello".concat(" ","World!");
+    </script>
+    
+    <button onclick="displayDate()">What time is it now?</button>
+    <!-- when the HTML events happend ,JavaScripts' code would be execute. like onchange, conclick, onmouseover, onmouseout, onkeydown, onload.-->
+    <script>
+    function displayDate() {
+        document.getElementById("demo3").innerHTML = Date();
+    }
+    </script>
+
+
+    <p id="demo3"></p>
+
+</body>   
+</html>
